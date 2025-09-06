@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
     callButtons.forEach(button => {
         if (button.textContent.includes('Call Now')) {
             button.addEventListener('click', function() {
-                window.location.href = 'tel:+94112345678';
+                window.location.href = 'tel:+263713213726';
             });
         }
     });
