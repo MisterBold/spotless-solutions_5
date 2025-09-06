@@ -268,7 +268,7 @@ p {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
 
     .logo{
         font-size: .9em;
