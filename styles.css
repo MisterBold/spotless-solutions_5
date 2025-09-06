@@ -271,7 +271,7 @@ p {
 @media screen and (max-width: 420px) {
 
     .logo{
-        font-size: 1em;
+        font-size: .9em;
     }
     
     #home.hero{
