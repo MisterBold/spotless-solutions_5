@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feschem (Pvt) Ltd - Premium Detergents & Cleaning Services</title>
+    <meta name="description" content="Leading detergent manufacturer and cleaning service provider. Specializing in old people homes, clinics, and commercial buildings.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="src/assets/feschem-logo-new.png" alt="Feschem Logo" class="logo-img">
+                    Feschem (Pvt) Ltd
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="detergents.html">Detergents</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="nav-buttons">
+                    <button class="btn btn-ghost" onclick="window.location.href='tel:+263713213726'">Call Now</button>
+                    <a class="btn btn-primary" href="./quotation.html">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Premium Detergents & Professional Cleaning</h1>
+                <p class="hero-subtitle">Leading manufacturer of high-quality detergents with specialized cleaning services for old people homes, clinics, and commercial buildings.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg" onclick="window.location.href='detergents.html'">
+                        View Detergents
+                    </button>
+                    <button class="btn btn-secondary btn-lg" onclick="scrollToSection('services')">
+                        Cleaning Services
+                    </button>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Safe Products</h3>
+                            <p>Eco-friendly and non-toxic formulations</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Emergency Service</h3>
+                            <p>24/7 availability for urgent needs</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>3+ Years Experience</h3>
+                            <p>Trusted by hundreds of customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium Detergent Range</h2>
+                <p>High-quality detergents for all your cleaning needs</p>
+            </div>
+            
+            <div class="products-content">
+                <div class="products-text">
+                    <img src="src/assets/1cleaning-products.jpg" alt="Premium Cleaning Products" class="products-image">
+                    <h3>Why Choose Feschem Detergents?</h3>
+                    <p>As a leading manufacturer, we produce high-quality detergents using advanced formulations. Our products are trusted by households and institutions for their superior cleaning power and value for money.</p>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <h4>Liquid Laundry Detergent</h4>
+                        <p>Premium concentrated formula for all fabric types, effective in both hot and cold water.</p>
+                        <div class="product-price">from $1.10</div>
+                        <ul class="product-features">
+                            <li>Concentrated formula</li>
+                            <li>Stain removal power</li>
+                            <li>Fabric protection</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="window.location.href='detergents.html'">View Details</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4>Dishwashing Liquid</h4>
+                        <p>Powerful grease-cutting formula that's gentle on hands while tough on dishes.</p>
+                        <div class="product-price">from $0.60</div>
+                        <ul class="product-features">
+                            <li>Grease cutting power</li>
+                            <li>Gentle on hands</li>
+                            <li>Long lasting</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="window.location.href='detergents.html'">View Details</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <h4>Floor Cleaner</h4>
+                        <p>All-purpose floor cleaner suitable for tiles, marble, and other hard surfaces.</p>
+                        <div class="product-price">from $1.15</div>
+                        <ul class="product-features">
+                            <li>Anti-bacterial formula</li>
+                            <li>Pleasant fragrance</li>
+                            <li>No residue</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="window.location.href='detergents.html'">View Details</button>
+                    </div>
+                    
+                    <!--<div class="product-card">
+                        <h4>Glass Cleaner</h4>
+                        <p>Streak-free formula for windows, mirrors, and glass surfaces.</p>
+                        <div class="product-price">Rs. 280</div>
+                        <ul class="product-features">
+                            <li>Streak-free shine</li>
+                            <li>Quick drying</li>
+                            <li>Professional results</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="window.location.href='detergents.html'">View Details</button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Cleaning Services</h2>
+                <p>Specialized cleaning services for old people homes, clinics, and commercial buildings</p>
+            </div>
+            
+            <div class="services-content">
+                <div class="services-text">
+                    <h3>Expert Cleaning Services</h3>
+                    <p>Feschem provides specialized cleaning services for healthcare facilities, schools, homes, and commercial buildings. Our trained staff use professional-grade equipment and detergents to maintain the highest hygiene standards.</p>
+                    
+                    <div class="services-stats">
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Facilities Serviced</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">99%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg" onclick="window.location.href='quotation.html'">Get Free Estimate</button>
+                </div>
+                
+                <div class="services-image">
+                    <img src="src/assets/professional-cleaning.jpg" alt="Professional Cleaning Service">
+                </div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>Home Cleaning</h4>
+                    <p>Specialized hygienic cleaning services for elderly care facilities with medical-grade standards.</p>
+                    <div class="service-details">
+                        <div class="service-price">Starting at $1.00 per square meter</div>
+                        <div class="service-duration">Monthly contracts</div>
+                    </div>
+                    <ul class="service-features">
+                        <li>Medical-grade sanitization</li>
+                        <li>Trained healthcare cleaning staff</li>
+                        <li>Infection control protocols</li>
+                        <li>24/7 emergency cleaning</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="window.location.href='quotation.html'">Get Quote</button>
+                </div>
+                
+                <div class="service-card">
+                    <h4>Clinic Cleaning Services</h4>
+                    <p>Professional cleaning for medical clinics, dental offices, and healthcare facilities.</p>
+                    <div class="service-details">
+                        <div class="service-price">Starting at $1.00 per square meter</div>
+                        <div class="service-duration">Weekly/Monthly</div>
+                    </div>
+                    <ul class="service-features">
+                        <li>Medical equipment cleaning</li>
+                        <li>Disinfection protocols</li>
+                        <li>Waste management</li>
+                        <li>Compliance standards</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="window.location.href='quotation.html'">Get Quote</button>
+                </div>
+                
+                <div class="service-card">
+                    <h4>Commercial Building Cleaning</h4>
+                    <p>Complete building maintenance for offices, shopping centers, and industrial facilities.</p>
+                    <div class="service-details">
+                        <div class="service-price">Starting at $1.00 per square meter</div>
+                        <div class="service-duration">Contract basis</div>
+                    </div>
+                    <ul class="service-features">
+                        <li>Floor to ceiling cleaning</li>
+                        <li>Window cleaning</li>
+                        <li>Carpet and upholstery</li>
+                        <li>Maintenance schedules</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="window.location.href='quotation.html'">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to get started? Contact us for a free consultation and quote.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+263 713 213 726<br>+263 772 681 436<br>+263 782 441 687</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>feschem22@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>53 George Silundika Street<br>Bulawayo, Zimbabwe</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon-Fri: 8AM-4.30PM<br>Sat: 9AM-4.30PM<br>Sun: Emergency Only</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="detergent-products">Detergent Products</option>
+                                <option value="old-people-homes">Homes Cleaning</option>
+                                <option value="clinic-cleaning">Clinic Cleaning</option>
+                                <option value="commercial-cleaning">Commercial Building Cleaning</option>
+                                <option value="consultation">Free Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Feschem (Pvt) Ltd</h3>
+                    <p>Leading manufacturer of premium detergents and provider of specialized cleaning services for healthcare facilities and commercial buildings since 2022.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="detergents.html">Laundry Detergents</a></li>
+                        <li><a href="detergents.html">Dishwashing Liquids</a></li>
+                        <li><a href="detergents.html">Floor Cleaners</a></li>
+                        <li><a href="detergents.html">Glass Cleaners</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Homes</a></li>
+                        <li><a href="#services">Clinic Cleaning</a></li>
+                        <li><a href="#services">Commercial Buildings</a></li>
+                        <li><a href="#contact">Free Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Phone: +263 713 213 726</li>
+                        <li>Email: feschem22@gmail.com</li>
+                        <li>53 George Silundika Street</li>
+                        <li>Bulawayo, Zimbabwe</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Feschem (Pvt) Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

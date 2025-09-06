@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quote - Feschem (Pvt) Ltd</title>
+    <meta name="description" content="Get a customized quote for premium detergents and professional cleaning services from Feschem.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="src/assets/feschem-logo-new.png" alt="Feschem Logo" class="logo-img">
+                    Feschem (Pvt) Ltd
+                </div>
+                
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="detergents.html">Detergents</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                
+                <div class="nav-buttons">
+                    <button class="btn btn-ghost" onclick="window.location.href='tel:+263713213726'">Call Now</button>
+                    <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quote Hero Section -->
+    <section class="quote-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Get Your Custom Quote</h1>
+                <p class="hero-subtitle">Professional detergents and cleaning services tailored to your needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-form-section">
+        <div class="container">
+            <div class="quote-content">
+                <div class="quote-info">
+                    <h2>Quick & Easy Quote Process</h2>
+                    <p>Fill out our detailed form to receive a customized quote for our premium detergents and professional cleaning services.</p>
+                    
+                    <div class="quote-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Fast Response</h4>
+                                <p>Get your quote within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-calculator"></i>
+                            <div>
+                                <h4>Accurate Pricing</h4>
+                                <p>Transparent, competitive rates</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Free Consultation</h4>
+                                <p>Expert advice at no cost</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-form-container">
+                    <form id="quoteForm" class="quote-form">
+                        <h3>Request Your Quote</h3>
+                        
+                        <div class="form-section">
+                            <h4>Contact Information</h4>
+                            <div class="form-group">
+                                <input type="text" id="companyName" name="companyName" placeholder="Company/Organization Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="contactName" name="contactName" placeholder="Contact Person Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="address" name="address" placeholder="Complete Address" rows="3" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Service Type</h4>
+                            <div class="service-options">
+                                <label class="service-option">
+                                    <input type="checkbox" name="services" value="detergent-products">
+                                    <span class="checkmark"></span>
+                                    <div class="option-content">
+                                        <strong>Detergent Products</strong>
+                                        <p>Premium cleaning agents for various applications</p>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-option">
+                                    <input type="checkbox" name="services" value="old-people-homes">
+                                    <span class="checkmark"></span>
+                                    <div class="option-content">
+                                        <strong>Home Cleaning</strong>
+                                        <p>Specialized hygienic cleaning</p>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-option">
+                                    <input type="checkbox" name="services" value="clinic-cleaning">
+                                    <span class="checkmark"></span>
+                                    <div class="option-content">
+                                        <strong>Medical Cleaning Services</strong>
+                                        <p>Medical-grade cleaning for healthcare facilities</p>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-option">
+                                    <input type="checkbox" name="services" value="commercial-cleaning">
+                                    <span class="checkmark"></span>
+                                    <div class="option-content">
+                                        <strong>Commercial Building Cleaning</strong>
+                                        <p>Complete maintenance for offices and buildings</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!--<div class="form-section" id="detergent-details" style="display: none;">
+                            <h4>Detergent Requirements</h4>
+                            <div class="form-group">
+                                <select id="detergentType" name="detergentType" multiple>
+                                    <option value="dishwasher-citrus">Dishwasher Citrus</option>
+                                    <option value="dishwasher-original">Dishwasher Original</option>
+                                    <option value="pineapple-strawberry">Pineapple Strawberry</option>
+                                    <option value="thick-bleach">Thick Bleach Lavender</option>
+                                    <option value="foam-bath">Foam Bath</option>
+                                    <option value="multipurpose-cleaner">Multipurpose Cleaner</option>
+                                    <option value="fabric-softener">Fabric Softener Lavender</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="quantity" name="quantity" placeholder="Estimated Monthly Quantity (units)" min="1">
+                            </div>
+                        </div>-->
+
+                        <div class="form-section" id="cleaning-details" style="display: none;">
+                            <h4>Cleaning Service Requirements</h4>
+                            <div class="form-group">
+                                <input type="number" id="facilitySize" name="facilitySize" placeholder="Facility Size (sq ft)" min="1">
+                            </div>
+                            <div class="form-group">
+                                <select id="cleaningFrequency" name="cleaningFrequency">
+                                    <option value="">Select Cleaning Frequency</option>
+                                    <option value="daily">Daily</option>
+                                    <option value="weekly">Weekly</option>
+                                    <option value="bi-weekly">Bi-weekly</option>
+                                    <option value="monthly">Monthly</option>
+                                    <option value="one-time">One-time Service</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="roomsCount" name="roomsCount" placeholder="Number of Rooms/Areas" min="1">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Additional Information</h4>
+                            <div class="form-group">
+                                <select id="urgency" name="urgency">
+                                    <option value="">When do you need this service?</option>
+                                    <option value="immediately">Immediately</option>
+                                    <option value="within-week">Within a week</option>
+                                    <option value="within-month">Within a month</option>
+                                    <option value="planning">Just planning ahead</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="specialRequirements" name="specialRequirements" placeholder="Special Requirements or Additional Information" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">Get My Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Feschem (Pvt) Ltd</h3>
+                    <p>Leading manufacturer of premium detergents and provider of specialized cleaning services for healthcare facilities and commercial buildings since 2021.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="detergents.html#laundry">Laundry Detergents</a></li>
+                        <li><a href="detergents.html#dish">Dishwashing Liquids</a></li>
+                        <li><a href="detergents.html#floor">Floor Cleaners</a></li>
+                        <li><a href="detergents.html#surface">Surface Cleaners</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Old People Homes</a></li>
+                        <li><a href="index.html#services">Clinic Cleaning</a></li>
+                        <li><a href="index.html#services">Commercial Buildings</a></li>
+                        <li><a href="quotation.html">Get Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Phone: +263 713 213 726</li>
+                        <li>Email: feschem22@gmail.com</li>
+                        <li>53 George Silundika Street</li>
+                        <li>Bulawayo, Zimbabwe</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Feschem (Pvt) Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="quotation.js"></script>
+</body>
+</html>

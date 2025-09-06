@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Detergents - Feschem (Pvt) Ltd</title>
+    <meta name="description" content="Browse our complete range of premium detergents and cleaning products from Feschem (Pvt) Ltd.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                    <div class="logo">
+                        <img src="src/assets/feschem-logo-new.png" alt="Feschem Logo" class="logo-img">
+                        Feschem (Pvt) Ltd
+                    </div>
+                
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="detergents.html" class="active">Detergents</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                
+                <div class="nav-buttons">
+                    <button class="btn btn-ghost" onclick="window.location.href='tel:+263713213726'">Call Now</button>
+                    <button class="btn btn-primary" onclick="window.location.href='quotation.html'">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Products -->
+    <section class="detergents-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Premium Detergent Range</h1>
+                <p class="hero-subtitle">Discover our complete collection of high-quality detergents designed for superior cleaning performance and value.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="products-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Product Categories</h2>
+                <p>Choose from our wide range of specialized cleaning solutions</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="category-card" onclick="showCategory('laundry')">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Laundry Detergents</h3>
+                    <p>Premium formulas for all fabric types</p>
+                </div>
+                
+                <div class="category-card" onclick="showCategory('dish')">
+                    <div class="category-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Dishwashing</h3>
+                    <p>Powerful grease-cutting solutions</p>
+                </div>
+                
+                <div class="category-card" onclick="showCategory('floor')">
+                    <div class="category-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Floor Care</h3>
+                    <p>Complete floor cleaning solutions</p>
+                </div>
+                
+                <div class="category-card" onclick="showCategory('surface')">
+                    <div class="category-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3>Surface Cleaners</h3>
+                    <p>Multi-purpose cleaning products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Products Section -->
+    <section class="detailed-products">
+        <div class="container">
+            <!-- Laundry Detergents -->
+            <div id="laundry" class="product-category active">
+                <h2>Laundry Detergents</h2>
+                <div class="products-grid">
+                    <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="Premium Washing Powder">
+                        </div>
+                        <div class="product-info">
+                            <h4>Fabric Softener Lavender</h4>
+                            <p>Bring the calming scent of a lavender field to your laundry with this one-liter bottle of fabric softener.</p>
+                            <div class="product-details">
+                                <div class="product-price">$1.50</div>
+                                <div class="product-sizes">Available: 1 Litre</div>
+                            </div>
+                            <ul class="product-features">
+                            
+                                <li>Color protection formula</li>
+                                <li>Fresh long-lasting scent</li>
+                                <li>Concentrated formula</li>
+                                <li>Suitable for all fabrics</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Premium Washing Powder')">Order Now</button>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="Liquid Detergent Original">
+                        </div>
+                        <div class="product-info">
+                            <h4>Fabric Softener Lavender</h4>
+                            <p>Bring the calming scent of a lavender field to your laundry with this one-liter bottle of fabric softener.</p>
+                            <div class="product-details">
+                                <div class="product-price">$2.50</div>
+                                <div class="product-sizes">Available: 2 Litres</div>
+                            </div>
+                            <ul class="product-features">
+                                 <li>Color protection formula</li>
+                                <li>Fresh long-lasting scent</li>
+                                <li>Concentrated formula</li>
+                                <li>Suitable for all fabrics</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Liquid Detergent Original')">Order Now</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                  <!--
+                      <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="Fabric Softener Lavender">
+                        </div>
+                        <div class="product-info">
+                            <h4>Fabric Softener Lavender</h4>
+                            <p>Premium fabric softener with calming lavender scent for ultra-soft clothes.</p>
+                            <div class="product-details">
+                                <div class="product-price">Rs. 510</div>
+                                <div class="product-sizes">Available: 1L, 500ml</div>
+                            </div>
+                            <ul class="product-features">
+                                <li>Ultra-soft fabric finish</li>
+                                <li>Calming lavender fragrance</li>
+                                <li>Reduces static cling</li>
+                                <li>Long-lasting freshness</li>
+                                <li>Compatible with all fabrics</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Fabric Softener Lavender')">Order Now</button>
+                                <button class="btn btn-ghost" onclick="requestSample('Fabric Softener Lavender')">Request Sample</button>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!-- Dishwashing Products -->
+            <div id="dish" class="product-category">
+                <h2>Dishwashing Products</h2>
+                <div class="products-grid">
+                    <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/dishwashing-lemon-750ml.jpg" alt="Dishwasher Citrus">
+                        </div>
+                        <div class="product-info">
+                            <h4>Dishwasher Citrus</h4>
+                            <p>Powerful citrus-scented dishwasher detergent for sparkling clean dishes.</p>
+                            <div class="product-details">
+                                <div class="product-price">from $1.35, $0.80, $0.60</div>
+                                <div class="product-sizes">Available: 2 Litres, 750ml, 500ml</div>
+                            </div>
+                            <ul class="product-features">
+                                <li>Fresh citrus fragrance</li>
+                                <li>Superior grease cutting</li>
+                                <li>Spotless finish</li>
+                                <li>Concentrated formula</li>
+                                <li>Safe for all dishes</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Dishwasher Citrus')">Order Now</button>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="Dishwasher Original">
+                        </div>
+                        <div class="product-info">
+                            <h4>Dishwasher Original</h4>
+                            <p>Classic formula dishwasher detergent for everyday cleaning needs.</p>
+                            <div class="product-details">
+                                <div class="product-price">from $1.35, $0.80, $0.60</div>
+                                <div class="product-sizes">Available: 2 Litres, 750 ml, 500 ml</div>
+                            </div>
+                            <ul class="product-features">
+                                <li>Proven formula</li>
+                                <li>Effective cleaning power</li>
+                                <li>Value for money</li>
+                                <li>Gentle on hands</li>
+                                <li>Long-lasting suds</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Dishwasher Original')">Order Now</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="Foam Bath Jasmine">
+                        </div>
+                        <div class="product-info">
+                            <h4>Foam Bath Jasmine</h4>
+                            <p>Luxurious foam bath with relaxing jasmine fragrance for a spa-like experience.</p>
+                            <div class="product-details">
+                                <div class="product-price">Rs. 565</div>
+                                <div class="product-sizes">Available: 1L</div>
+                            </div>
+                            <ul class="product-features">
+                                <li>Rich, luxurious foam</li>
+                                <li>Relaxing jasmine scent</li>
+                                <li>Moisturizing formula</li>
+                                <li>Gentle on skin</li>
+                                <li>Long-lasting bubbles</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Foam Bath Jasmine')">Order Now</button>
+                                <button class="btn btn-ghost" onclick="requestSample('Foam Bath Jasmine')">Request Sample</button>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!-- Floor Care Products -->
+            <div id="floor" class="product-category">
+                <h2>Floor Care Products</h2>
+                <div class="products-grid">
+                    <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="Multipurpose Cleaner Handy Lemon">
+                        </div>
+                        <div class="product-info">
+                            <h4>Pinegel Original</h4>
+                            <p>Versatile cleaning solution with fresh lemon scent for multiple surfaces.</p>
+                            <div class="product-details">
+                                <div class="product-price">$2.20, $1.15</div>
+                                <div class="product-sizes">Available: 1 Litre, 500 ml</div>
+                            </div>
+                            <ul class="product-features">
+                                <li>Fresh lemon fragrance</li>
+                                <li>Multi-surface compatibility</li>
+                                <li>Powerful cleaning action</li>
+                                <li>Easy spray application</li>
+                                <li>Streak-free results</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Multipurpose Cleaner Handy Lemon')">Order Now</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="Pineapple Strawberry">
+                        </div>
+                        <div class="product-info">
+                            <h4>Pinegel Strawberry</h4>
+                            <p>Delightfully scented multipurpose cleaner with tropical fragrance.</p>
+                            <div class="product-details">
+                                <div class="product-price">$2.20, $1.15</div>
+                                <div class="product-sizes">Available: 1 Litre, 500 ml</div>
+                            </div>
+                            <ul class="product-features">
+                                <li>Tropical fruit fragrance</li>
+                                <li>Multipurpose use</li>
+                                <li>Non-toxic formula</li>
+                                <li>Pleasant cleaning experience</li>
+                                <li>Safe for daily use</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Pineapple Strawberry')">Order Now</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="Thick Bleach Lavender">
+                        </div>
+                        <div class="product-info">
+                            <h4>Pinegel Pineapple</h4>
+                            <p>versatile, concentrated gel cleaner that effectively removes grease and grime, leaving a long-lasting, fresh pineapple scent and a streak-free shine.</p>
+                            <div class="product-details">
+                                <div class="product-price">$2.20, $1.15</div>
+                                <div class="product-sizes">Available: 1 Litre, 500 ml</div>
+                            </div>
+                            <ul class="product-features">
+                                <li>Effective Cleaning</li>
+                                <li>Deodorizing</li>
+                                <li>Concentrated Formula</li>
+                                <li>Antibacterial Properties</li>
+                                <li>Versatile</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Thick Bleach Lavender')">Order Now</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Surface Cleaners -->
+            <div id="surface" class="product-category">
+                <h2>Surface Cleaners</h2>
+                <div class="products-grid">
+                    <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="Glass Cleaner">
+                        </div>
+                        <div class="product-info">
+                            <h4> Multipurpose Cleaner (Handy) Lemon</h4>
+                            <p>a powerful cream cleaner that cuts through tough grease and grime, leaving behind a sparkling shine and a fresh lemon scent.</p>
+                            <div class="product-details">
+                                <div class="product-price">$0.80, $0.65</div>
+                                <div class="product-sizes">Available: 750 ml, 500 ml</div>
+                            </div>
+                            <ul class="product-features">
+                                <li>Residue-Free Shine</li>
+                                <li>Quick drying formula</li>
+                                <li>Ammonia-free composition</li>
+                                <li>Anti-static properties</li>
+                                <li>Disinfecting Properties</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('Glass Cleaner')">Order Now</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card-detailed">
+                        <div class="product-image">
+                            <img src="src/assets/cleaning-products.jpg" alt="All Purpose Cleaner">
+                        </div>
+                        <div class="product-info">
+                            <h4>Thick Bleach Lavender</h4>
+                            <p> a powerful disinfectant and whitening agent with a concentrated formula that clings to surfaces for longer-lasting cleaning and sanitization</p>
+                            <div class="product-details">
+                                <div class="product-price">$0.95</div>
+                                <div class="product-sizes">Available: 500ml</div>
+                            </div>
+                            <ul class="product-features">
+                                <li>Multi-surface compatibility</li>
+                                <li>Disinfectant properties</li>
+                                <li>Fresh clean scent</li>
+                                <li>Ready to use formula</li>
+                                <li>Non-toxic ingredients</li>
+                            </ul>
+                            <div class="product-actions">
+                                <button class="btn btn-primary" onclick="orderProduct('All Purpose Cleaner')">Order Now</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Feschem -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Feschem Detergents?</h2>
+                <p>Quality you can trust, value you can afford</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Local Manufacturing</h3>
+                    <p>Proudly manufactured in Zimbabwe with international quality standards</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Biodegradable formulas that are safe for you and the environment</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Value for Money</h3>
+                    <p>Premium quality at competitive prices with bulk discounts available</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Island-wide Delivery</h3>
+                    <p>Fast and reliable delivery across Zimbabwe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Feschem (Pvt) Ltd</h3>
+                    <p>Leading manufacturer of premium detergents and provider of specialized cleaning services for healthcare facilities and commercial buildings since 2021.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#laundry">Laundry Detergents</a></li>
+                        <li><a href="#dish">Dishwashing Liquids</a></li>
+                        <li><a href="#floor">Floor Cleaners</a></li>
+                        <li><a href="#surface">Surface Cleaners</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Old People Homes</a></li>
+                        <li><a href="index.html#services">Clinic Cleaning</a></li>
+                        <li><a href="index.html#services">Commercial Buildings</a></li>
+                        <li><a href="index.html#contact">Free Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Phone: +263 713 213 726</li>
+                        <li>Email: feschem22@gmail.com</li>
+                        <li>53 George Silundika Street</li>
+                        <li>Bulawayo, Zimbabwe</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Feschem (Pvt) Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="detergents.js"></script>
+</body>
+</html>
