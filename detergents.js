@@ -32,7 +32,7 @@ function showCategory(categoryId) {
 function orderProduct(productName) {
     const message = `Hello! I would like to order ${productName}. Please provide me with more details about pricing and availability.`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/263713213726?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/263773010216?text=${encodedMessage}`;
     window.open(whatsappURL, '_blank');
 }
 
